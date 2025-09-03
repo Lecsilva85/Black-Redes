@@ -360,9 +360,6 @@ footer .container .contact .info li a {
     border: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-/* ------------------------------------------------------------------ */
-/* INÍCIO DA CORREÇÃO */
-/* ------------------------------------------------------------------ */
 .button-home {
     position: fixed;
     right: 25px;
@@ -374,6 +371,9 @@ footer .container .contact .info li a {
 
 .button-home img {
     height: 40px;
+    position: relative;
+    left: 15px;
+    bottom: -20px;
     transform: rotate(-90deg);
     transition: 0.3s ease-in-out;
 }
@@ -382,10 +382,7 @@ footer .container .contact .info li a {
     transform: rotate(-90deg) scale(1.2);
 }
 
-/* ------------------------------------------------------------------ */
-/* FIM DA CORREÇÃO */
-/* ------------------------------------------------------------------ */
-
+/*
 
 @media (max-width: 1024px) {
     section {
@@ -422,15 +419,17 @@ footer .container .contact .info li a {
         padding: 30px 30px;
     }
 }
-
+*/
 @media (max-width: 768px) {
     header {
-        margin-top: -20px;
-        padding: 40px;
+        top: -75px; /* Remove a posição negativa */
+        padding: 20px; /* Reduz o padding para não ocupar tanto espaço */
+        flex-wrap: wrap; /* Permite que os itens quebrem a linha */
+        justify-content: space-evenly; /* Centraliza os itens quando necessário */
     }
 
     section {
-        padding: 150px 40px;
+        padding: 150px 20px;
     }
 
     .sci {
@@ -442,8 +441,16 @@ footer .container .contact .info li a {
     }
 
     .content {
-        flex-direction: column;
-        top: -100px;
+        flex-direction: column; /* Empilha o texto e a imagem */
+        text-align: center; /* Centraliza o texto */
+        top: 0; /* Remove o top negativo */
+    }
+
+    .content .imgBox {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 30px; /* Adiciona um espaço entre o texto e a imagem */
     }
 
     .content .textBox,
@@ -485,9 +492,11 @@ footer .container .contact .info li a {
     }
 
     .content .imgBox img {
-        max-width: 350px;
-        top: 20px;
-        left: -360px;
+        position: static; /* Volta a imagem para o fluxo normal */
+        max-width: 90%; /* Ajusta o tamanho da imagem para caber na tela */
+        top: auto; /* Remove o top fixo */
+        left: auto; /* Remove o left fixo */
+        margin: 0 auto; /* Centraliza a imagem */
     }
 
     .toggle {
@@ -574,7 +583,7 @@ footer .container .contact .info li a {
         display: none;
     }
 }
-
+/*
 @media (max-width: 480px) {
     section {
         padding: 100px 20px;
