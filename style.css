@@ -372,7 +372,7 @@ footer .container .contact .info li a {
 .button-home img {
     height: 40px;
     position: relative;
-    left: 15px;
+    left: 20px;
     bottom: -20px;
     transform: rotate(-90deg);
     transition: 0.3s ease-in-out;
@@ -382,54 +382,79 @@ footer .container .contact .info li a {
     transform: rotate(-90deg) scale(1.2);
 }
 
-/*
-
-@media (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     section {
-        padding: 80px;
+        padding: 80px 50px;
     }
 
     header {
-        padding: 30px 80px;
+        padding: 30px 50px;
     }
 
-    .sci {
-        left: 80px;
-    }
-
-    .sci li {
-        margin-top: -100px;
+    .content .textBox {
+        position: relative;
+        max-width: 600px;
+        margin-right: 20px;
+        margin-top: -500px;
     }
 
     .content .imgBox img {
-        max-width: 470px;
-        left: -435px;
-        top: 60px;
+        max-width: 700px;
+        left: -705px;
+        top: -90px;
     }
 
     .grade-projetos {
         grid-template-columns: repeat(2, 1fr);
-        padding: 0 80px;
+        padding: 0 50px;
     }
 
     .sobre {
-        position: relative;
-        top: 124px;
         grid-template-columns: 1fr;
-        padding: 30px 30px;
+        padding: 30px;
+        margin-top: 50px;
+    }
+
+    .img-sobre {
+        height: auto;
+        width: 80%;
+        max-width: 400px;
+    }
+
+    .conteudo-sobre {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .sci li {
+        position: relative;
+        left: -55px;
+    }
+
+    footer .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    footer .container .sci {
+        display: none;
     }
 }
-*/
+
 @media (max-width: 768px) {
+    body {
+        background: linear-gradient(to right, #000000d9 0%, rgb(0 63 96) 30%, #34343445 100%);
+    }
+
     header {
-        top: -75px; /* Remove a posição negativa */
-        padding: 20px; /* Reduz o padding para não ocupar tanto espaço */
-        flex-wrap: wrap; /* Permite que os itens quebrem a linha */
-        justify-content: space-evenly; /* Centraliza os itens quando necessário */
+        top: -75px;
+        padding: 20px;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
 
     section {
-        padding: 150px 20px;
+        padding: 150px 15px;
     }
 
     .sci {
@@ -437,20 +462,20 @@ footer .container .contact .info li a {
     }
 
     .sci li {
-        margin-top: -150px;
+        margin-top: -100px;
     }
 
     .content {
-        flex-direction: column; /* Empilha o texto e a imagem */
-        text-align: center; /* Centraliza o texto */
-        top: 0; /* Remove o top negativo */
+        flex-direction: column;
+        text-align: center;
+        top: 0;
     }
 
     .content .imgBox {
         width: 100%;
         display: flex;
         justify-content: center;
-        margin-top: 30px; /* Adiciona um espaço entre o texto e a imagem */
+        margin-top: 30px;
     }
 
     .content .textBox,
@@ -492,11 +517,11 @@ footer .container .contact .info li a {
     }
 
     .content .imgBox img {
-        position: static; /* Volta a imagem para o fluxo normal */
-        max-width: 90%; /* Ajusta o tamanho da imagem para caber na tela */
-        top: auto; /* Remove o top fixo */
-        left: auto; /* Remove o left fixo */
-        margin: 0 auto; /* Centraliza a imagem */
+        position: static;
+        max-width: 90%;
+        top: auto;
+        left: auto;
+        margin: 0 auto;
     }
 
     .toggle {
@@ -528,7 +553,7 @@ footer .container .contact .info li a {
 
     .sobre {
         position: relative;
-        top: 124px;
+        top: 130px;
         grid-template-columns: 1fr;
         padding: 0;
     }
@@ -558,7 +583,7 @@ footer .container .contact .info li a {
     footer .container {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         gap: 20px;
     }
 
@@ -568,46 +593,5 @@ footer .container .contact .info li a {
 
     .copyrightText {
         padding: 10px 5px 10px;
-    }
-}
-
-@media (max-width: 768px) {
-    footer .container {
-        width: 100%;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-    }
-
-    footer .container .sci {
-        display: none;
-    }
-}
-/*
-@media (max-width: 480px) {
-    section {
-        padding: 100px 20px;
-    }
-
-    .content .textBox h2 {
-        font-size: 1.8em;
-    }
-
-    .sci {
-        bottom: 20px;
-        left: 20px;
-    }
-
-    .sci li a {
-        width: 40px;
-        height: 40px;
-    }
-
-    .sci li a i {
-        font-size: 18px;
-    }
-
-    footer {
-        padding: 10px 15px 0px;
     }
 }
