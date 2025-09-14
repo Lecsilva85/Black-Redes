@@ -564,7 +564,7 @@ footer .container .contact .info li a {
 
     .sobre {
         position: relative;
-        top: 130px;
+        top: -30px;
         grid-template-columns: 1fr;
         padding: 0;
     }
@@ -593,6 +593,7 @@ footer .container .contact .info li a {
     }
 
     footer {
+        top: -30px;
         padding: 10px 50px 0px;
     }
 
