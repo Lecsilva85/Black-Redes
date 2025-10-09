@@ -76,7 +76,7 @@ header .navigation li a:active {
 
 .whats {
     position: fixed;
-    width: 90px;
+    width: 75px;
     left: 25px;
     bottom: -13px;
     z-index: 1;
