@@ -226,10 +226,6 @@ header .navigation li a:active {
     box-shadow: 0px 0px 20px 15px rgb(54 53 53 / 45%);
 }
 
-.card-projeto .loja p {
-    color: #d64d22;
-}
-
 h3 {
     font-weight: 600;
     color: #D4AC44;
@@ -295,6 +291,7 @@ footer {
     position: relative;
     width: 100%;
     height: auto;
+    top: -30px;
     padding: 5px 100px;
     background: #272727;
 }
@@ -315,6 +312,7 @@ footer .container .sec h2 {
 
 footer .container .sec p {
     color: #fff;
+    font-weight: 300;
 }
 
 footer .container .sci {
@@ -380,6 +378,7 @@ footer .container .contact .info li a {
 
 .copyrightText {
     width: 100%;
+    font-weight: 100;
     background: #000000;
     padding: 10px 100px 15px;
     text-align: center;
@@ -623,7 +622,7 @@ footer .container .contact .info li a {
     }
 
     footer {
-        top: -30px;
+        top: -70px;
         padding: 10px 50px 0px;
     }
 
